@@ -1,0 +1,94 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #b40000; /* Cor do texto */
+    background: linear-gradient(90deg, #4e9f9f, #e3f9f7); /* Cor de fundo suave */
+    overflow: hidden;
+}
+
+/* Estilizando a logo */
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 20px; /* Logo no canto superior esquerdo */
+    width: 200Spx; /* Tamanho da logo reduzido */
+    height: auto;
+    border-radius: 0%; /* Remove bordas arredondadas */
+    box-shadow: none; /* Remove sombra */
+}
+
+/* Contêiner de Digital Signage */
+.digital-signage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #d4af37;
+}
+
+/* Estilização da lista de vídeos */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha à esquerda */
+    width: 40%; 
+    height: 35%;
+    position: absolute;
+    bottom: 330px;
+    left: 20px; /* Coloca o vídeo mais para a esquerda */
+}
+
+ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o vídeo à esquerda */
+}
+
+iframe {
+    width: 60%; /* Reduz o tamanho do vídeo */
+    height: 300px; /* Reduz a altura do vídeo */
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #f4a300;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.footer {
+    background: rgba(10, 60, 100, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1em;
+    color: #ffffff;
+}
