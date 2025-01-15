@@ -5,10 +5,12 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #b40000; /* Cor do texto */
-    background: linear-gradient(90deg, #4e9f9f, #e3f9f7); /* Cor de fundo suave */
+    background: linear-gradient(90deg, #1704f4, #00ff0a); 
     overflow: hidden;
 }
 
@@ -42,16 +44,16 @@ body {
     color: #d4af37;
 }
 
-/* Estilização da lista de vídeos */
+
 .video-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha à esquerda */
+    align-items: flex-start;
     width: 40%; 
     height: 35%;
     position: absolute;
     bottom: 330px;
-    left: 20px; /* Coloca o vídeo mais para a esquerda */
+    left: 20px;
 }
 
 ul {
