@@ -1,96 +1,48 @@
-/* Reset Básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #b40000; /* Cor do texto */
-    background: linear-gradient(90deg, #1704f4, #00ff0a); 
-    overflow: hidden;
-}
-
-/* Estilizando a logo */
-.logo {
-    position: absolute;
-    top: 30px;
-    left: 20px; /* Logo no canto superior esquerdo */
-    width: 200Spx; /* Tamanho da logo reduzido */
-    height: auto;
-    border-radius: 0%; /* Remove bordas arredondadas */
-    box-shadow: none; /* Remove sombra */
-}
-
 /* Contêiner de Digital Signage */
 .digital-signage {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     padding: 20px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #1704f4, #00ff0a); 
+    overflow: hidden;
 }
 
-/* Cabeçalho */
-.header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #d4af37;
+.logo {
+    width: 250px; 
+    height: auto;
+    margin: 20px auto; 
+    height: 100%S;
 }
 
-
-.video-container {
+/* Contêiner para os vídeos */
+.Elevador,
+.TVpistol {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 45%; /* Ajusta a largura para caber lado a lado */
+    margin: 10px; /* Espaçamento entre os vídeos */
+}
+
+/* Contêiner para alinhar os vídeos lado a lado */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
-    width: 40%; 
-    height: 35%;
-    position: absolute;
-    bottom: 330px;
-    left: 20px;
-}
-
-ul {
-    list-style-type: none;
+    gap: 20px; /* Espaçamento entre os vídeos */
     width: 100%;
-}
-
-li {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinha o vídeo à esquerda */
+    margin-top: 30px;
 }
 
 iframe {
-    width: 60%; /* Reduz o tamanho do vídeo */
-    height: 300px; /* Reduz a altura do vídeo */
+    width: 100%; /* Torna os vídeos responsivos */
+    height: 300px;
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-h3 {
-    font-size: 1.8em;
-    color: #f4a300;
-    margin-bottom: 10px;
-}
-
-/* Rodapé */
-.footer {
-    background: rgba(10, 60, 100, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.footer p {
-    font-size: 1em;
-    color: #ffffff;
 }
