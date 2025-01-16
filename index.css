@@ -16,20 +16,20 @@
     width: 250px; 
     height: auto;
     margin: 20px auto; 
-    height: 100%S;
+}
+
+/* Estilizando os títulos dos vídeos */
+.videoElevador, .videoPistol {
+    font-size: 2em; /* Aumenta o tamanho do título */
+    font-weight: bold; /* Títulos em negrito */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento ao redor do texto */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: center; /* Alinha o título ao centro */
+    margin-bottom: 10px; /* Espaçamento entre o título e o vídeo */
 }
 
 /* Contêiner para os vídeos */
-.Elevador,
-.TVpistol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 45%; /* Ajusta a largura para caber lado a lado */
-    margin: 10px; /* Espaçamento entre os vídeos */
-}
-
-/* Contêiner para alinhar os vídeos lado a lado */
 .video-wrapper {
     display: flex;
     justify-content: center;
